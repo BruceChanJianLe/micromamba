@@ -35,8 +35,7 @@ micromamba create -n my_env
 micromamba activate my_env
 ```
 
-If you get the below warning, just follow the information to activate your environment.  
-
+If you get the below warning:  
 ```
 'micromamba' is running as a subprocess and can't modify the parent shell.
 Thus you must initialize your shell before using activate and deactivate.
@@ -56,6 +55,7 @@ Supported shells are {bash, zsh, csh, xonsh, cmd.exe, powershell, fish}.
 critical libmamba Shell not initialized
 ```
 
+ just follow the information to activate your environment.  
 ```bash
 eval "$(micromamba shell hook --shell zsh)"
 micromamba activate my_env
