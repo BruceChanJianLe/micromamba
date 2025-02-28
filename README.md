@@ -1,6 +1,14 @@
-# micromamba 🐍
+# MICROMAMBA 🐍
 
 This repository demonstrates usage of micromamba to manage your Python environment :D
+
+## Table of Contents
+- [Installation](#installation)
+- [Create Environment](#create-environment)
+- [Activate Environment](#activate-environment)
+- [One-liner](#one-liner)
+- [Deactivate Environment](#deactivate-environment)
+- [Removing Environment](#removing-environment)
 
 ## Installation
 
