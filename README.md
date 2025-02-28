@@ -80,3 +80,9 @@ Read more about auto starting your jupyterlab quitely behind the scene in this
 ```bash
 micromamba deactivate
 ```
+
+## Removing Environment
+
+```bash
+micromamba env remove -n my_env
+```
