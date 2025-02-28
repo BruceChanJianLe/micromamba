@@ -26,8 +26,10 @@ You can also create the virtual environment first without installing
 anything dependencies.  
 
 ```bash
-micromamba create -n my_env
+micromamba create -n my_env python=3.10 conda-forge
 ```
+
+Note to use conda-forge if you don't want to worry about licensing issues.  
 
 ## Activate Environment
 
@@ -60,3 +62,15 @@ critical libmamba Shell not initialized
 eval "$(micromamba shell hook --shell zsh)"
 micromamba activate my_env
 ````
+
+## One-liner
+
+If you just want to start your jupyter lab without going into your environment,
+you can run the following command.  
+
+```bash
+micromamba run -n jupyterlab jupyter lab --port 7777
+```
+
+Read more about auto starting your jupyterlab quitely behind the scene in this
+[article]().
