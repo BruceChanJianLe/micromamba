@@ -74,3 +74,9 @@ micromamba run -n jupyterlab jupyter lab --port 7777
 
 Read more about auto starting your jupyterlab quitely behind the scene in this
 [article]().
+
+## Deactivate Environment
+
+```bash
+micromamba deactivate
+```
