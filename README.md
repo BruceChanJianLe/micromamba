@@ -71,6 +71,15 @@ eval "$(micromamba shell hook --shell zsh)"
 micromamba activate my_env
 ````
 
+## New Modules for Environment
+
+Alright, sometimes you might not know all the dependencies that you required.
+But don't fret, you can always update the modules that you need as follows:
+
+```bash
+micromamba install -n my_env scipy -c conda-forge -y
+```
+
 ## One-liner
 
 If you just want to start your jupyter lab without going into your environment,
