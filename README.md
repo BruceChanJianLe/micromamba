@@ -6,7 +6,7 @@ This repository demonstrates usage of micromamba to manage your Python environme
 - [Installation](#installation)
 - [Create Environment](#create-environment)
 - [Activate Environment](#activate-environment)
-- [New-Modules-for-Environment](#new-modules-for-environment)
+- [New Modules for Environment](#new-modules-for-environment)
 - [One-liner](#one-liner)
 - [Deactivate Environment](#deactivate-environment)
 - [Removing Environment](#removing-environment)
