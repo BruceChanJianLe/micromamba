@@ -103,7 +103,7 @@ micromamba env export > environment.yaml
 To update the environment from a YAML file, add or remove libraries in the YAML file
 and run the following command to update the environment:
 ```bash
-micromamba env update -f environment.yaml
+micromamba update -n my_env --file environment.yaml
 ```
 
 ## One-liner
