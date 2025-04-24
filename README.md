@@ -7,6 +7,8 @@ This repository demonstrates usage of micromamba to manage your Python environme
 - [Create Environment](#create-environment)
 - [Activate Environment](#activate-environment)
 - [New Modules for Environment](#new-modules-for-environment)
+- [Store Dependencies](#store-dependencies)
+- [Update Environment File](#update-environment-file)
 - [One-liner](#one-liner)
 - [Deactivate Environment](#deactivate-environment)
 - [Removing Environment](#removing-environment)
@@ -79,6 +81,29 @@ But don't fret, you can always update the modules that you need as follows:
 
 ```bash
 micromamba install -n my_env scipy -c conda-forge -y
+```
+
+## Store Dependencies
+
+After creating your environment, you may want to store a copy of the dependencies
+in order for you to reproduce it on another system.
+
+First you will need to enter the environment:
+```bash
+micromamba activate my_env
+```
+
+Then run the following command to generate an environment.yaml file:
+```bash
+micromamba env export > environment.yaml
+```
+
+## Update Environment File
+
+To update the environment from a YAML file, add or remove libraries in the YAML file
+and run the following command to update the environment:
+```bash
+micromamba env update -f environment.yaml
 ```
 
 ## One-liner
