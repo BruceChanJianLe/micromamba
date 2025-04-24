@@ -35,7 +35,7 @@ You can also create the virtual environment first without installing
 anything dependencies.  
 
 ```bash
-micromamba create -n my_env python=3.10 conda-forge
+micromamba create -n my_env python=3.10 -c conda-forge
 ```
 
 Note to use conda-forge if you don't want to worry about licensing issues.  
