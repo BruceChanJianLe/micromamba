@@ -22,13 +22,6 @@
           shellHook = ''
             echo "Micromamba development environment"
             echo "Micromamba version: $(micromamba --version)"
-            # echo ""
-            # echo "To initialize micromamba, run:"
-            # echo "  eval \"\$(micromamba shell hook --shell bash)\""
-            # echo ""
-            # echo "Then you can create environments with:"
-            # echo "  micromamba create -n myenv python=3.11"
-            # echo "  micromamba activate myenv"
           '';
         };
       });
