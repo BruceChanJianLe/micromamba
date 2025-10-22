@@ -24,6 +24,19 @@ ansible-pull -U https://github.com/brucechanjianle/ansible --ask-become-pass --t
 nix-env -Ai nixpkgs.micromamba
 ```
 
+Alternatively, you can also use the nix flake file from this project to
+install `micromamba`. Sometimes, if you are on older system such as ubuntu22
+installation from `nix-env` may fail.  
+
+```bash
+# For bash user
+nix develop
+# For zsh users
+nix develop -c $SHELL
+```
+
+It will drop you into a shell with `micromamba`.  
+
 ## Create Environment
 
 For example, you would like to create a new virtual environment
