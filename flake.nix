@@ -20,6 +20,15 @@
           ];
 
           shellHook = ''
+            # Set up micromamba in the shell
+            export MAMBA_ROOT_PREFIX="$PWD/.micromamba"
+            mkdir -p "$MAMBA_ROOT_PREFIX"
+
+            # Only works on bash shell as shellHook is bash
+            # # Initialize micromamba for the current shell
+            # CURR_SHELL=$(basename "$SHELL")
+            # eval "$(micromamba shell hook --shell $CURR_SHELL)"
+
             echo "Micromamba development environment"
             echo "Micromamba version: $(micromamba --version)"
           '';
