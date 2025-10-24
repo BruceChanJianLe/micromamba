@@ -35,6 +35,15 @@ nix develop
 nix develop -c $SHELL
 ```
 
+If you just want a one time thing, you can make a directory and use the
+command below:  
+```bash
+# For bash user
+nix develop github:brucechanjianle/micromamba
+# For zsh users
+nix develop github:brucechanjianle/micromamba -c $SHELL
+```
+
 It will drop you into a shell with `micromamba`.  
 
 ## Create Environment
