@@ -1,0 +1,16 @@
+# An example of Jupyter Lab Service
+[Unit]
+Description=Jupyter Lab Server
+After=network.target
+
+[Service]
+# Environment="MAMBA_ROOT_PREFIX=/home/developer/reference/hidden_location/.micromamba"
+ExecStart=/home/developer/.nix-profile/bin/micromamba run -n jupyterlab jupyter lab --port 7777 --no-browser
+WorkingDirectory=%h/reference
+# Restart=on-failure
+Environment=RORT=7777
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
